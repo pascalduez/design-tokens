@@ -1,0 +1,19 @@
+{
+  "name": "design-tokens",
+  "version": "0.1.0",
+  "license": "Unlicense",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "format:check": "prettier --check --cache --cache-location=.cache/prettier \"**/*.{js,ts,css}\"",
+    "format:write": "prettier --write --cache --cache-location=.cache/prettier \"**/*.{js,ts,css}\""
+  },
+  "packageManager": "pnpm@8.14.1+sha256.2df78e65d433d7693b9d3fbdaf431b2d96bb4f96a2ffecd51a50efe16e50a6a8",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  }
+}
