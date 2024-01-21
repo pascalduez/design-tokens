@@ -61,7 +61,7 @@ export const nestedFlow: Format = {
 function minifyDictionary(node) {
   if (!isPlainObject(node)) return node;
 
-  if (node.hasOwnProperty('value')) return node.value;
+  if (Object.hasOwn(node, 'value')) return node.value;
 
   let nextNode = {};
   for (let [key, value] of Object.entries(node)) {

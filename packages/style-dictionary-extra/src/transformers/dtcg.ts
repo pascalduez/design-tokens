@@ -24,14 +24,14 @@ export const colorHSL: Transform = {
   transformer: token => {
     let { hue, saturation, lightness, alpha: alphaValue } = token.$value;
     let alpha = alphaValue <= 1 ? alphaValue * 100 : alphaValue;
-    let asAlpha = alpha < 100;
+    let hasAlpha = alpha < 100;
 
     let params = [
       Math.round(hue) + 'deg',
       Math.round(saturation) + '%',
       Math.round(lightness) + '%',
-      asAlpha && '/',
-      asAlpha && alpha + '%',
+      hasAlpha && '/',
+      hasAlpha && alpha + '%',
     ]
       .filter(Boolean)
       .join(' ');
