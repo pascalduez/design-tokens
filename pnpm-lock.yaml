@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: ^20.11.5
-        version: 20.11.5
+        specifier: ^20.11.9
+        version: 20.11.9
       prettier:
         specifier: ^3.2.4
         version: 3.2.4
@@ -21,8 +21,8 @@ importers:
   packages/style-dictionary-extra:
     dependencies:
       '@prettier/sync':
-        specifier: ^0.3.0
-        version: 0.3.0(prettier@3.2.4)
+        specifier: ^0.5.0
+        version: 0.5.0(prettier@3.2.4)
       change-case:
         specifier: ^5.4.2
         version: 5.4.2
@@ -274,16 +274,17 @@ packages:
     dev: true
     optional: true
 
-  /@prettier/sync@0.3.0(prettier@3.2.4):
-    resolution: {integrity: sha512-3dcmCyAxIcxy036h1I7MQU/uEEBq8oLwf1CE3xeze+MPlgkdlb/+w6rGR/1dhp6Hqi17fRS6nvwnOzkESxEkOw==}
+  /@prettier/sync@0.5.0(prettier@3.2.4):
+    resolution: {integrity: sha512-1a6veNypZYkSbU33anha4Pdna9Jz3HXUc0aru7sgN7HuyJHPIVNdCTfjhm1S+mG9yXmWuAO+a6I+Cznp9Ogt3A==}
     peerDependencies:
-      prettier: ^3.0.0
+      prettier: '*'
     dependencies:
+      make-synchronized: 0.2.7
       prettier: 3.2.4
     dev: false
 
-  /@types/node@20.11.5:
-    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==}
+  /@types/node@20.11.9:
+    resolution: {integrity: sha512-CQXNuMoS/VcoAMISe5pm4JnEd1Br5jildbQEToEMQvutmv+EaQr90ry9raiudgpyDuqFiV9e4rnjSfLNq12M5w==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -564,6 +565,10 @@ packages:
     resolution: {integrity: sha512-/1clY/ui8CzjKFyjdvwPWJUYKiFVXG2I2cY0ssG7h4+hwk+XOIX7ZSG9Q7TW8TW3Kp3BUSqgFWBLgL4PJ+Blag==}
     engines: {node: 14 || >=16.14}
     dev: true
+
+  /make-synchronized@0.2.7:
+    resolution: {integrity: sha512-tbTJaNgmKV3E6yYxEN5djObcMt0j1WB2ltn8JteZYczrdFkGMor3KAraPGUf4NJsf5u+FvJbgbGGL35N3J6VVw==}
+    dev: false
 
   /minimatch@9.0.3:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
