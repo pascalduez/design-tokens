@@ -13,14 +13,12 @@ export const length: Transform = {
   type: 'value',
   transitive: true,
   matcher: chain(isDimension, hasExtension('length')),
-  transformer: token => {
-    let { scale } = getExtension(token) || {};
-    let base = parseInt(token.$value);
+  transformer: (token, options) => {
+    let scale = parseFloat(options.basePxLength) || 4;
 
-    if (!scale || !base) return token.$value;
+    if (Number.isNaN(scale)) return token.$value;
 
-    // https://github.com/amzn/style-dictionary/issues/873
-    return pxToRem({ ...token, value: base * scale });
+    return (token.$value * scale).toFixed(0) + 'px';
   },
 };
 

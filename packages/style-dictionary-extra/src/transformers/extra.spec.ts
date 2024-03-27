@@ -9,31 +9,17 @@ describe('[transformers] extra', () => {
       assert.equal(
         length.transformer(
           {
-            $value: '4px',
+            $value: 2,
             $type: 'dimension',
             $extensions: {
               'org.tokens.extra': {
                 use: 'length',
-                scale: 2,
               },
             },
           },
-          {},
+          { basePxLength: 4 },
         ),
-        '0.5rem',
-      );
-    });
-
-    it('should not transform length tokens if not extension is provided', () => {
-      assert.equal(
-        length.transformer(
-          {
-            $value: '4px',
-            $type: 'dimension',
-          },
-          {},
-        ),
-        '4px',
+        '8px',
       );
     });
   });
