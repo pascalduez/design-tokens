@@ -10,10 +10,10 @@
     "format:check": "prettier --check --cache --cache-location=.cache/prettier \"**/*.{js,ts,css}\"",
     "format:write": "prettier --write --cache --cache-location=.cache/prettier \"**/*.{js,ts,css}\""
   },
-  "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589",
+  "packageManager": "pnpm@9.1.2+sha512.127dc83b9ea10c32be65d22a8efb4a65fb952e8fefbdfded39bdc3c97efc32d31b48b00420df2c1187ace28c921c902f0cb5a134a4d032b8b5295cbfa2c681e2",
   "devDependencies": {
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.12",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   }
 }
