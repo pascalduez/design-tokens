@@ -38,15 +38,15 @@
     "test": "node --import tsx --no-warnings --test \"**/*.spec.ts\""
   },
   "dependencies": {
-    "@prettier/sync": "^0.5.1",
-    "change-case": "^5.4.3",
+    "@prettier/sync": "^0.5.2",
+    "change-case": "^5.4.4",
     "json5": "^2.2.3",
-    "traverse": "^0.6.8"
+    "traverse": "^0.6.9"
   },
   "devDependencies": {
-    "dedent": "^1.5.1",
-    "prettier": "^3.2.5",
+    "dedent": "^1.5.3",
+    "prettier": "^3.3.3",
     "style-dictionary": "^3.9.2",
-    "tsx": "^4.7.1"
+    "tsx": "^4.17.0"
   }
 }
