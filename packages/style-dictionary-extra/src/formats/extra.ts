@@ -2,7 +2,7 @@ import prettier from '@prettier/sync';
 import { camelCase } from 'change-case';
 import StyleDictionary, { type Format } from 'style-dictionary';
 
-import { isPlainObject } from '../utils/isPlainObject.js';
+import { isPlainObject } from '../utils/isPlainObject.ts';
 
 const {
   formatHelpers: { fileHeader },

@@ -35,7 +35,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "test": "node --import tsx --no-warnings --test \"**/*.spec.ts\""
+    "test": "node --experimental-strip-types --test \"**/*.spec.ts\""
   },
   "dependencies": {
     "@prettier/sync": "^0.5.2",

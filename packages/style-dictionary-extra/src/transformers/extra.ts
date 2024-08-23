@@ -1,8 +1,8 @@
 import StyleDictionary from 'style-dictionary';
 
 import { getExtension, hasExtension } from '../extensions/extra.ts';
-import { isDimension, isLineHeight } from '../matchers/dtcg.js';
-import { chain } from '../utils/chain.js';
+import { isDimension, isLineHeight } from '../matchers/dtcg.ts';
+import { chain } from '../utils/chain.ts';
 
 import type { Transform } from '../../types/style-dictionary.ts';
 
